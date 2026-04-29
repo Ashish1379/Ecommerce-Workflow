@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>TestNG:  ChromeTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ChromeTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 01 22:36:51 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>69 seconds (69945 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TestCategoryPage.testCategoryPage()'><b>testCategoryPage</b><br>Test class: tests.TestCategoryPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCategoryPage@d21a74c</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.sendPaymentData()'><b>sendPaymentData</b><br>Test class: tests.TestCheckoutPage<br>Parameters: Visa, 1245 0987 5625, 09/23, Anit, Kumar, 2nd road, village, near station, rajgao, Jammu, 986567, India, no</td>
+<td></td>
+<td>6</td>
+<td>tests.TestCheckoutPage@68267da0</td></tr>
+<tr>
+<td title='tests.TestHomePage.testHome()'><b>testHome</b><br>Test class: tests.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestHomePage@7a675056</td></tr>
+<tr>
+<td title='tests.TestProductListPage.validateProductListPage()'><b>validateProductListPage</b><br>Test class: tests.TestProductListPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestProductListPage@6e509ffa</td></tr>
+<tr>
+<td title='tests.TestCartPage.verifyCartPageOpen()'><b>verifyCartPageOpen</b><br>Test class: tests.TestCartPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCartPage@683dbc2c</td></tr>
+<tr>
+<td title='tests.TestLandingPage.testpage()'><b>testpage</b><br>Test class: tests.TestLandingPage</td>
+<td></td>
+<td>1</td>
+<td>tests.TestLandingPage@3c0be339</td></tr>
+<tr>
+<td title='tests.TestProductListPage.clickOnProduct()'><b>clickOnProduct</b><br>Test class: tests.TestProductListPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestProductListPage@6e509ffa</td></tr>
+<tr>
+<td title='tests.TestCartPage.proceedToCheckoutPage()'><b>proceedToCheckoutPage</b><br>Test class: tests.TestCartPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCartPage@683dbc2c</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.validateCheckoutPage()'><b>validateCheckoutPage</b><br>Test class: tests.TestCheckoutPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCheckoutPage@68267da0</td></tr>
+<tr>
+<td title='tests.TestProductPage.addToCart()'><b>addToCart</b><br>Test class: tests.TestProductPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestProductPage@2898ac89</td></tr>
+<tr>
+<td title='tests.TestCartPage.updateProductValue()'><b>updateProductValue</b><br>Test class: tests.TestCartPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCartPage@683dbc2c</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.sendPaymentData()'><b>sendPaymentData</b><br>Test class: tests.TestCheckoutPage<br>Parameters: American Express, 6146 8788 0923, 01/24, Animesh, Somala, 2nd street, village, behind temple, sikar, Haryana, 358976, India, no</td>
+<td></td>
+<td>7</td>
+<td>tests.TestCheckoutPage@68267da0</td></tr>
+<tr>
+<td title='tests.TestProductPage.validateProductPage()'><b>validateProductPage</b><br>Test class: tests.TestProductPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestProductPage@2898ac89</td></tr>
+<tr>
+<td title='tests.TestHomePage.searchTest()'><b>searchTest</b><br>Test class: tests.TestHomePage</td>
+<td></td>
+<td>1</td>
+<td>tests.TestHomePage@7a675056</td></tr>
+<tr>
+<td title='tests.TestCartPage.validatePrice()'><b>validatePrice</b><br>Test class: tests.TestCartPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCartPage@683dbc2c</td></tr>
+<tr>
+<td title='tests.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: tests.TestLoginPage<br>Parameters: Jhonn1, Jhonn1</td>
+<td></td>
+<td>2</td>
+<td>tests.TestLoginPage@15ca7889</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.sendPaymentData()'><b>sendPaymentData</b><br>Test class: tests.TestCheckoutPage<br>Parameters: American Express, 6546 0987 8009, 07/24, Anuj, Yadav, near post office, near home, basant nagar, Delhi, 173637, India, no</td>
+<td></td>
+<td>7</td>
+<td>tests.TestCheckoutPage@68267da0</td></tr>
+<tr>
+<td title='tests.TestHomePage.validateHome()'><b>validateHome</b><br>Test class: tests.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestHomePage@7a675056</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.sendPaymentData()'><b>sendPaymentData</b><br>Test class: tests.TestCheckoutPage<br>Parameters: MasterCard, 6146 8788 0924, 10/26, Warish, Somala, raja pul, ulta pul, near station, patna, Bihar, 987634, India, yes</td>
+<td></td>
+<td>8</td>
+<td>tests.TestCheckoutPage@68267da0</td></tr>
+<tr>
+<td title='tests.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: tests.TestLoginPage<br>Parameters: Jhonn2, Jhonn2</td>
+<td></td>
+<td>1</td>
+<td>tests.TestLoginPage@15ca7889</td></tr>
+<tr>
+<td title='tests.TestCategoryPage.goToProduct()'><b>goToProduct</b><br>Test class: tests.TestCategoryPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCategoryPage@d21a74c</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.moveToPaymentPage()'><b>moveToPaymentPage</b><br>Test class: tests.TestCheckoutPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCheckoutPage@68267da0</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.sendPaymentData()'><b>sendPaymentData</b><br>Test class: tests.TestCheckoutPage<br>Parameters: MasterCard, 2301 0987 6256, 10/24, Arun, Yadav, 1st line, city, near home, pradesh, Punjab, 754534, India, yes</td>
+<td></td>
+<td>7</td>
+<td>tests.TestCheckoutPage@68267da0</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.sendPaymentData()'><b>sendPaymentData</b><br>Test class: tests.TestCheckoutPage<br>Parameters: Visa, 1479 8357 8368, 11/25, Rajat, Kumar, opposite street , mayana salai, near station, chennai, Tamil  Nadu, 538363, India, yes</td>
+<td></td>
+<td>8</td>
+<td>tests.TestCheckoutPage@68267da0</td></tr>
+</table><p>
+</body>
+</html>

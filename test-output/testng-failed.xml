@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [E-Commerce WorkFlow]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="ChromeTests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.TestCheckoutPage">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="verifyCheckoutPage"/>
+        </methods>
+      </class> <!-- tests.TestCheckoutPage -->
+      <class name="tests.TestCartPage">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="validatePrice"/>
+          <include name="setup"/>
+          <include name="proceedToCheckoutPageTest"/>
+        </methods>
+      </class> <!-- tests.TestCartPage -->
+    </classes>
+  </test> <!-- ChromeTests(failed) -->
+</suite> <!-- Failed suite [E-Commerce WorkFlow] -->

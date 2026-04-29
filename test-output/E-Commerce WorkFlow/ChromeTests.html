@@ -1,0 +1,392 @@
+<html>
+<head>
+<title>TestNG:  ChromeTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ChromeTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 12 09:34:46 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>62 seconds (62221 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TestHomePage.verifyHomepage()'><b>verifyHomepage</b><br>Test class: tests.TestHomePage<br/>
+<a href="#Output-1924108520" onClick='toggleBox("Output-1924108520", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1924108520" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1924108520">
+!!!Home Page validation passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestHomePage@1ebd319f</td></tr>
+<tr>
+<td title='tests.TestLoginPage.verifyLoginPage()'><b>verifyLoginPage</b><br>Test class: tests.TestLoginPage<br/>
+<a href="#Output-1247938090" onClick='toggleBox("Output-1247938090", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1247938090" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1247938090">
+!!!login page verified-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestLoginPage@7b02881e</td></tr>
+<tr>
+<td title='tests.TestProductListPage.clickOnProductTest()'><b>clickOnProductTest</b><br>Test class: tests.TestProductListPage<br/>
+<a href="#Output-648346093" onClick='toggleBox("Output-648346093", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-648346093" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-648346093">
+!!!Product selected-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestProductListPage@15ca7889</td></tr>
+<tr>
+<td title='tests.TestHomePage.searchOnHomepageTest()'><b>searchOnHomepageTest</b><br>Test class: tests.TestHomePage<br/>
+<a href="#Output-823223069" onClick='toggleBox("Output-823223069", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-823223069" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-823223069">
+!!!searching for pets passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>tests.TestHomePage@1ebd319f</td></tr>
+<tr>
+<td title='tests.TestLandingPage.testLandingPage()'><b>testLandingPage</b><br>Test class: tests.TestLandingPage<br/>
+<a href="#Output-38851648" onClick='toggleBox("Output-38851648", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-38851648" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-38851648">
+!!!Landing page verification passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestLandingPage@5f8edcc5</td></tr>
+<tr>
+<td title='tests.TestProductListPage.verifyProductListPage()'><b>verifyProductListPage</b><br>Test class: tests.TestProductListPage<br/>
+<a href="#Output-82973602" onClick='toggleBox("Output-82973602", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-82973602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-82973602">
+!!!verification of productlist page done-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestProductListPage@15ca7889</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.sendPaymentData()'><b>sendPaymentData</b><br>Test class: tests.TestCheckoutPage<br>Parameters: MasterCard, 2301 0987 6256, 10/24, Arun, Yadav, 1st line, city, near home, pradesh, Punjab, 754534, India, no<br/>
+<a href="#Output-831784708" onClick='toggleBox("Output-831784708", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-831784708" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-831784708">
+!!!Arun's payment data sent successfully- passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>tests.TestCheckoutPage@6e509ffa</td></tr>
+<tr>
+<td title='tests.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: tests.TestLoginPage<br>Parameters: Jhonn2, Jhonn2<br/>
+<a href="#Output-936632640" onClick='toggleBox("Output-936632640", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-936632640" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-936632640">
+!!!Login feature passed for user : Jhonn2 !!!<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestLoginPage@7b02881e</td></tr>
+<tr>
+<td title='tests.TestCartPage.verifyCartPageOpen()'><b>verifyCartPageOpen</b><br>Test class: tests.TestCartPage<br/>
+<a href="#Output-1986126964" onClick='toggleBox("Output-1986126964", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1986126964" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1986126964">
+!!!cart page verified-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCartPage@d21a74c</td></tr>
+<tr>
+<td title='tests.TestCartPage.updateProductValueTest()'><b>updateProductValueTest</b><br>Test class: tests.TestCartPage<br/>
+<a href="#Output-626423169" onClick='toggleBox("Output-626423169", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-626423169" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-626423169">
+!!!product quantity updated-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCartPage@d21a74c</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.sendPaymentData()'><b>sendPaymentData</b><br>Test class: tests.TestCheckoutPage<br>Parameters: American Express, 6146 8788 0923, 01/24, Animesh, Somala, 2nd street, village, behind temple, sikar, Haryana, 358976, India, no<br/>
+<a href="#Output-1483159551" onClick='toggleBox("Output-1483159551", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1483159551" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1483159551">
+!!!Animesh's payment data sent successfully- passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>tests.TestCheckoutPage@6e509ffa</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.sendPaymentData()'><b>sendPaymentData</b><br>Test class: tests.TestCheckoutPage<br>Parameters: Visa, 1245 0987 5625, 09/23, Anit, Kumar, 2nd road, village, near station, rajgao, Jammu, 986567, India, no<br/>
+<a href="#Output-344410717" onClick='toggleBox("Output-344410717", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-344410717" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-344410717">
+!!!Anit's payment data sent successfully- passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>tests.TestCheckoutPage@6e509ffa</td></tr>
+<tr>
+<td title='tests.TestLandingPage.navigateToHome()'><b>navigateToHome</b><br>Test class: tests.TestLandingPage<br/>
+<a href="#Output-802270602" onClick='toggleBox("Output-802270602", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-802270602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-802270602">
+!!!Succefully navigated to home page!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestLandingPage@5f8edcc5</td></tr>
+<tr>
+<td title='tests.TestLoginPage.testLogin()'><b>testLogin</b><br>Test class: tests.TestLoginPage<br>Parameters: Jhonn1, Jhonn1<br/>
+<a href="#Output-1618326377" onClick='toggleBox("Output-1618326377", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1618326377" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1618326377">
+!!!Login feature passed for user : Jhonn1 !!!<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>tests.TestLoginPage@7b02881e</td></tr>
+<tr>
+<td title='tests.TestCategoryPage.verifyCategoryPage()'><b>verifyCategoryPage</b><br>Test class: tests.TestCategoryPage<br/>
+<a href="#Output-476234749" onClick='toggleBox("Output-476234749", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-476234749" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-476234749">
+!!!verification of category page completed-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCategoryPage@3c0be339</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.sendPaymentData()'><b>sendPaymentData</b><br>Test class: tests.TestCheckoutPage<br>Parameters: MasterCard, 6146 8788 0924, 10/26, Warish, Somala, raja pul, ulta pul, near station, patna, Bihar, 987634, India, yes<br/>
+<a href="#Output-1028135144" onClick='toggleBox("Output-1028135144", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1028135144" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1028135144">
+!!!Warish's payment data sent successfully- passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>tests.TestCheckoutPage@6e509ffa</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.moveToPaymentPageTest()'><b>moveToPaymentPageTest</b><br>Test class: tests.TestCheckoutPage<br/>
+<a href="#Output-1745014819" onClick='toggleBox("Output-1745014819", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1745014819" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1745014819">
+!!!clicked on continue button-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCheckoutPage@6e509ffa</td></tr>
+<tr>
+<td title='tests.TestProductPage.verifyProductPage()'><b>verifyProductPage</b><br>Test class: tests.TestProductPage<br/>
+<a href="#Output-783402517" onClick='toggleBox("Output-783402517", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-783402517" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-783402517">
+!!!verification of product page done-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestProductPage@7a675056</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.sendPaymentData()'><b>sendPaymentData</b><br>Test class: tests.TestCheckoutPage<br>Parameters: Visa, 1479 8357 8368, 11/25, Rajat, Kumar, opposite street , mayana salai, near station, chennai, Tamil  Nadu, 538363, India, no<br/>
+<a href="#Output-361843637" onClick='toggleBox("Output-361843637", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-361843637" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-361843637">
+!!!Rajat's payment data sent successfully- passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>tests.TestCheckoutPage@6e509ffa</td></tr>
+<tr>
+<td title='tests.TestCartPage.proceedToCheckoutPageTest()'><b>proceedToCheckoutPageTest</b><br>Test class: tests.TestCartPage<br/>
+<a href="#Output-2123686705" onClick='toggleBox("Output-2123686705", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2123686705" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2123686705">
+!!!checkout button clicked-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCartPage@d21a74c</td></tr>
+<tr>
+<td title='tests.TestCartPage.validatePrice()'><b>validatePrice</b><br>Test class: tests.TestCartPage<br/>
+<a href="#Output-226800546" onClick='toggleBox("Output-226800546", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-226800546" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-226800546">
+!!!Price validated-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCartPage@d21a74c</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.sendPaymentData()'><b>sendPaymentData</b><br>Test class: tests.TestCheckoutPage<br>Parameters: American Express, 6546 0987 8009, 07/24, Anuj, Yadav, near post office, near home, basant nagar, Delhi, 173637, India, no<br/>
+<a href="#Output-1978560393" onClick='toggleBox("Output-1978560393", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1978560393" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1978560393">
+!!!Anuj's payment data sent successfully- passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>tests.TestCheckoutPage@6e509ffa</td></tr>
+<tr>
+<td title='tests.TestHomePage.clickOnAnyCategoryTest()'><b>clickOnAnyCategoryTest</b><br>Test class: tests.TestHomePage<br/>
+<a href="#Output-1342373353" onClick='toggleBox("Output-1342373353", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1342373353" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1342373353">
+!!!Able to click on category-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestHomePage@1ebd319f</td></tr>
+<tr>
+<td title='tests.TestCheckoutPage.verifyCheckoutPage()'><b>verifyCheckoutPage</b><br>Test class: tests.TestCheckoutPage<br/>
+<a href="#Output-529832633" onClick='toggleBox("Output-529832633", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-529832633" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-529832633">
+!!!checkout page verified-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCheckoutPage@6e509ffa</td></tr>
+<tr>
+<td title='tests.TestCategoryPage.selectAnyProductTest()'><b>selectAnyProductTest</b><br>Test class: tests.TestCategoryPage<br/>
+<a href="#Output-402389762" onClick='toggleBox("Output-402389762", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-402389762" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-402389762">
+!!!Product is selected-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestCategoryPage@3c0be339</td></tr>
+<tr>
+<td title='tests.TestProductPage.addProductToCartTest()'><b>addProductToCartTest</b><br>Test class: tests.TestProductPage<br/>
+<a href="#Output-813364097" onClick='toggleBox("Output-813364097", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-813364097" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-813364097">
+!!!product added to cart-passed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestProductPage@7a675056</td></tr>
+</table><p>
+</body>
+</html>
